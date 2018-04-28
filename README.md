@@ -1,6 +1,6 @@
 # AutoVolatility
 
-AutoVolatility is a script made to run reveral volatility plugins at the same time
+AutoVolatility is a script made to run several volatility plugins at the same time
 
 ## How to use
 
