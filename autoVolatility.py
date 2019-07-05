@@ -81,6 +81,7 @@ def getProfile(file, vol_path):
 
 
 def main(argv):
+    globals plugins, plugins_all
     hlp = "autoVol.py -f MEMFILE -d DIRECTORY [-e VOLATILITY-PATH] [-a] [-p PROFILE] [-c 'plugin1,plugin2,plugin3']"
     try:
         opts, args = getopt.getopt(argv,"hf:d:p:c:ae:t:",["help","file","directory=","profile=","console=","all", "volatility-path=", "threads="])
