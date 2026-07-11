@@ -47,7 +47,7 @@ class ThreadVol(threading.Thread):
             
             # Run volatility
             if ("dump" in plugin and not plugin in dump_noDir) or (plugin in dump_plugins):
-                cmd = self.vol_path+" -f "+ self.memfile+" --profile="+self.profile+" "+plugin+"  --dump-dir="+plugin_dir
+                cmd = self.vol_path+" -f "+ self.memfile+" --profile="+self.profile+" "+plugin+"  -D "+plugin_dir
             else:
                 cmd = self.vol_path+" -f "+ self.memfile+" --profile="+self.profile+" "+plugin
             print cmd
